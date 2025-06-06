@@ -3,3 +3,9 @@
 @use './scss/reset';
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
+body {
+    background-color: vars.$bg-color;
+    color: vars.$main-color;
+    min-height: 100vh;
+}

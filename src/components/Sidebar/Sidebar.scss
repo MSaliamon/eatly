@@ -1,0 +1,29 @@
+@use '../../scss/mixins';
+@use '../../scss/vars';
+@use '../../scss/reset';
+
+.sidebar {
+    @include mixins.flex(column, space-between, flex-start, 0px);
+    padding: 40px 24px;
+    min-height: 100vh;
+    &-container1 {
+        @include mixins.flex(column, flex-start, flex-start, 62px);
+        &__logo {
+            @include mixins.flex(row, flex-start, center, 15px);
+            &-link {
+                @include mixins.Poppins(22px, 600, 130%);
+                color: vars.$secondary-color;
+            }
+        }
+    }
+    &-container2 {
+        @include mixins.flex(column, flex-start, flex-start, 38px);
+        &__box {
+            @include mixins.flex(row, flex-start, center, 12px);
+            &-text {
+                @include mixins.Manrope(16px, 500, 150%);
+                color: vars.$third-color;
+            }
+        }
+    }
+}

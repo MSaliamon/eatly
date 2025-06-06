@@ -1,0 +1,29 @@
+@use '../../../scss/mixins';
+@use '../../../scss/vars';
+@use '../../../scss/reset';
+
+.nav {
+  &__list {
+    @include mixins.flex(column, flex-start, flex-start, 12px);
+  }
+
+  &__link {
+    @include mixins.flex(row, flex-start, center, 12px);
+    padding: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+
+    &-text {
+      @include mixins.Manrope(14px, 500, 150%);
+      color: vars.$third-color;
+    }
+  }
+
+  &__link--active {
+    background-color: vars.$secondary-color;
+
+    .nav__link-text {
+      color: vars.$hover-color;
+    }
+  }
+}
