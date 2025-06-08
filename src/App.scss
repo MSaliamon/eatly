@@ -8,4 +8,13 @@ body {
     background-color: vars.$bg-color;
     color: vars.$main-color;
     min-height: 100vh;
+    width: 100%;
+    .layout {
+        @include mixins.flex(row, flex-start, flex-start, 0px);
+        width: 100%;
+        .main-content {
+            @include mixins.flex(column, flex-start, flex-start, 0px);
+            width: 100%;
+        }
+    }
 }
