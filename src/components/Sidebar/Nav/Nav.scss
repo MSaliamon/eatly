@@ -21,6 +21,7 @@
 
   &__link--active {
     background-color: vars.$secondary-color;
+    padding: 16px 70px 16px 16px;
 
     .nav__link-text {
       color: vars.$hover-color;
