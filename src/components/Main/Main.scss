@@ -6,4 +6,7 @@
     @include mixins.flex(row, space-between, flex-start, 0px);
     width: 100%;
     padding: 30px 40px;
+    .right-content {
+        @include mixins.flex(column, flex-start, flex-start, 32px);
+    }
 }
