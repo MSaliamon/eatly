@@ -4,7 +4,7 @@
 
 .header {
     @include mixins.flex(row, space-between, center, 0px);
-    padding: 48px 40px;
+    padding: 28px 40px;
     width: 100%;
     &__title {
         @include mixins.Poppins(24px, 600, 130%);

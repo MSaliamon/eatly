@@ -4,7 +4,7 @@
 
 .sidebar {
     @include mixins.flex(column, space-between, flex-start, 0px);
-    padding: 40px 24px;
+    padding: 28px 24px;
     min-height: 100vh;
     &-container1 {
         @include mixins.flex(column, flex-start, flex-start, 62px);

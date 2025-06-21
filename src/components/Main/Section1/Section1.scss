@@ -4,18 +4,17 @@
 
 .section1 {
     @include mixins.flex(column, flex-start, flex-start, 40px);
-    width: 100%;
+    width: 75%;
     padding: 0px 40px;
     &-container1 {
         @include mixins.flex(column, flex-start, flex-start, 26px);
         width: 100%;
         .section1-box1 {
             @include mixins.flex(row, space-between, center, 12px);
-            width: 100%;
             position: relative;
             padding: 20px;
             background-color: vars.$secondary-color;
-            width: 50%;
+            width: 80%;
             border-radius: 24px;
             &__textbox {
                 @include mixins.flex(column, flex-start, flex-start, 0px);
@@ -120,7 +119,7 @@
                     padding: 5px;
                     border-radius: 4px;
                     &-text {
-                        @include mixins.Poppins(14px, 400, 11px);
+                        @include mixins.Poppins(7px, 400, 7px);
                     }
                 }
                 &__text {
