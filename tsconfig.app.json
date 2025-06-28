@@ -13,7 +13,7 @@
     "strictFunctionTypes": true,
     "noImplicitThis": true,
     "strictBindCallApply": true,
-    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "firebase"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -29,9 +29,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    // 👉 Додай ось це:
-    "types": []
   },
-  "include": ["src"]
+  "include": ["src/**/*", "node_modules/@types/**/*"]
 }
