@@ -1,0 +1,78 @@
+@use '../../scss/mixins';
+@use '../../scss/vars';
+@use '../../scss/reset';
+
+.orders {
+    @include mixins.flex(row, flex-start, flex-start, 83px);
+    width: 100%;
+    &-container {
+        @include mixins.flex(column, flex-start, flex-start, 30px);
+        width: 100%;
+    }
+    &__box {
+        @include mixins.flex(column, center, center, 30px);
+        width: 100%;
+    }
+    &__title {
+        @include mixins.Poppins(25px, 600, 25px);
+    }
+    &__list {
+        @include mixins.flex(column, center, flex-start, 30px);
+        width: 100%;
+    }
+    &__item {
+        @include mixins.flex(row, space-between, center, 20px);
+        width: 100%;
+        &-details {
+            @include mixins.flex(row, flex-start, center, 10px);
+            width: 100%;
+            &-textbox {
+                @include mixins.flex(column, flex-start, flex-start, 10px);
+                width: 100%;
+                &-title {
+                @include mixins.Poppins(18px, 600, 135%);
+                }
+                &-price {
+                    @include mixins.Poppins(16px, 400, 135%);
+                }
+            }
+        }
+    }
+    &-wrap {
+        @include mixins.flex(column, flex-start, flex-end, 30px);
+        width: 100%;
+    }
+    &__quantity {
+        @include mixins.flex(row, flex-end, center, 12px);
+        width: 100%;
+        &-btn {
+            background-color: vars.$main-color;
+            color: vars.$hover-color;
+            padding: 10px 15px;
+            border-radius: 15px;
+        }
+        &-text {
+            @include mixins.Poppins(16px, 400, 135%);
+        }
+    }
+    &__total {
+        @include mixins.flex(row, space-between, center, 0px);
+        width: 100%;
+        &-text {
+            @include mixins.Poppins(25px, 600, 135%);
+        }
+        &-price {
+                @include mixins.Poppins(25px, 600, 135%);
+        }
+    }
+    &__btn {
+        background-color: vars.$secondary-color;
+        color: vars.$hover-color;
+        padding: 21px 0px;
+        border-radius: 15px;
+        width: 70%;
+    }
+    .right-content {
+        @include mixins.flex(column, flex-start, flex-start, 20px);
+    }
+}

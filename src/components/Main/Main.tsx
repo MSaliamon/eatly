@@ -1,7 +1,7 @@
-import Recommended from '../Recomended/Recommended'
-import WalletSection from '../WalletSection/WalletSection'
-import './Main.scss'
-import Section1 from './Section1/Section1'
+import Recommended from '../Recomended/Recommended';
+import WalletSection from '../WalletSection/WalletSection';
+import './Main.scss';
+import Section1 from './Section1/Section1';
 
 function Main() {
   return (
@@ -12,7 +12,8 @@ function Main() {
         <Recommended />
       </div>
     </main>
-  )
+  );
 }
 
-export default Main
+export default Main;
+

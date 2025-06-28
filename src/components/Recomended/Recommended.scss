@@ -3,11 +3,11 @@
 @use '../../scss/reset';
 
 .recommended {
-    @include mixins.flex(column, flex-start, flex-start, 30px);
+    @include mixins.flex(column, flex-start, flex-start, 10px);
     width: 100%;
     border: 1px solid vars.$third-color;
     border-radius: 16px;
-    padding: 24px;
+    padding: 16px;
     &__title {
         @include mixins.Poppins(18px, 700, 135%);
     }

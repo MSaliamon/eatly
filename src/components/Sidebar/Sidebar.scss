@@ -6,6 +6,7 @@
     @include mixins.flex(column, space-between, flex-start, 0px);
     padding: 28px 24px;
     min-height: 100vh;
+    width: 16%;
     &-container1 {
         @include mixins.flex(column, flex-start, flex-start, 62px);
         &__logo {

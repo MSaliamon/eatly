@@ -1,0 +1,18 @@
+@use '../../scss/mixins';
+@use '../../scss/vars';
+@use '../../scss/reset';
+
+.wrapper {
+    @include mixins.flex(row, space-between, flex-start, 0px);
+    width: 100%;
+    .container {
+        width: 100%;
+    }
+    .main {
+        @include mixins.flex(row, space-between, flex-start, 0px);
+        width: 100%;
+        .right-content {
+            @include mixins.flex(column, flex-start, flex-start, 12px);
+        }
+    }
+}

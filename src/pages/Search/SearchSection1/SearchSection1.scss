@@ -1,0 +1,16 @@
+@use '../../../scss/mixins';
+@use '../../../scss/vars';
+@use '../../../scss/reset';
+
+.search {
+    @include mixins.flex(column, center, center, 160px);
+    width: 100%;
+    &__label {
+        @include mixins.flex(row, flex-start, center, 20px);
+        width: 50%;
+        background-color: vars.$input-color;
+        padding: 21px 18px;
+        border-radius: 18px;
+    }
+}
+
