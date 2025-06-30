@@ -1,0 +1,33 @@
+@use '../../scss/mixins';
+@use '../../scss/vars';
+@use '../../scss/reset';
+
+.wallet-main {
+    @include mixins.flex(row, space-between, flex-start, 0px);
+    width: 100%;
+    padding: 10px 40px;
+    &-container {
+        @include mixins.flex(column, flex-start, flex-start, 40px);
+        &__title {
+            @include mixins.Manrope(24px, 800, 130%);
+        }
+    }
+    &-box {
+        @include mixins.flex(column, flex-start, flex-start, 20px);
+        &__text {
+            @include mixins.Poppins(22px, 600, 33px);
+        }
+    }
+    &-container2 {
+        @include mixins.flex(column, flex-start, flex-start, 24px);
+        &__title {
+            @include mixins.Poppins(22px, 600, 33px);
+        }
+        &__list {
+            @include mixins.flex(column, flex-start, flex-start, 20px);
+        }
+        &__item {
+            @include mixins.Poppins(16px,600,160%);
+        }
+    }
+}
