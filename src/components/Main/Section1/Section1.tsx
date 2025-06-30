@@ -1,6 +1,6 @@
 import './Section1.scss';
-import popularDishes from '../../../data/Popular'; // Оновлений шлях
-import type { Dish } from '../../../data/Popular'; // Оновлений шлях
+import popularDishes from '../../../data/Popular';
+import type { Dish } from '../../../data/Popular';
 import Food from '../../../assets/homepage/png/Food.png';
 import Pizza from '../../../assets/homepage/svg/Pizza.svg';
 import Hotdog from '../../../assets/homepage/svg/Hotdog.svg';
@@ -11,7 +11,7 @@ import chicken from '../../../assets/homepage/png/chicken.png';
 import burger from '../../../assets/homepage/png/burger.png';
 import star from '../../../assets/homepage/svg/Star.svg';
 import plus from '../../../assets/homepage/svg/plus.svg';
-import { useOrder } from '../../../context/OrderContext'; // Оновлений шлях
+import { useOrder } from '../../../context/OrderContext';
 
 function Section1() {
   const { addOrder } = useOrder();

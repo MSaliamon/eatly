@@ -29,8 +29,8 @@
           background-color: vars.$input-color;
           border-radius: 15px;
           transition: all 0.3s ease;
-          width: 100%; // Ensure full width
-          box-sizing: border-box; // Include padding in width
+          width: 100%;
+          box-sizing: border-box;
         }
         &__input--filled {
           @include mixins.Poppins(16px, 500, 23px);
@@ -48,7 +48,7 @@
           top: 50%;
           transform: translateY(-50%);
           cursor: pointer;
-          font-size: 20px; // Adjust size for the icon
+          font-size: 20px;
           color: vars.$secondary-color;
         }
         &__error {

@@ -1,6 +1,6 @@
 import './Recommended.scss';
-import { recommendedItems } from '../../data/Recomended'; // Імпорт константи
-import type { RecommendedItem } from '../../data/Recomended'; // Імпорт типу
+import { recommendedItems } from '../../data/Recomended';
+import type { RecommendedItem } from '../../data/Recomended';
 
 function Recommended() {
   return (
